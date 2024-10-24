@@ -19,9 +19,9 @@ def zonder_letter(letters, gebruikte_letter):
 def heeft_alle_letters(woord, letters: str):
     ongebruikte_letters = letters
     for letter in woord:
-        if letter not in ongebruikte_letters:
+        if letter not in ongebruikte_letters:#voorkomen dat letter dubbel gebruikt worden
             return False
-        ongebruikte_letters = zonder_letter(ongebruikte_letters, letter)#voorkomen dat letter dubbel gebruikt worden
+        ongebruikte_letters = zonder_letter(ongebruikte_letters, letter)
     return True
 
 #het woord opzoek in de wordlist
